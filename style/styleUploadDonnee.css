@@ -1,0 +1,38 @@
+.modechargement {
+    display: flex;
+    margin: 5px 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.auto {
+    text-align: center;
+    margin: 0 5px 0 0;
+    padding: 10px;
+    border: 2px groove;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 5px 5px 5px 3px;
+}
+
+.manuel {
+    text-align: center;
+    margin: 0;
+    padding: 10px;
+    border: 2px groove;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 5px 5px 5px 3px;
+}
+
+.rightpart .inactive {
+    background-color: #f1f1f1;
+    color: gray;
+}
+
+.manuel:hover, .auto:hover {
+    padding: 5px;
+    font-size: 20px;
+    color: rgb(5, 70, 5);
+    background-color: rgba(230, 240, 243, 0.5);
+}

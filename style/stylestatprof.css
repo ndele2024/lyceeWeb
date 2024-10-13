@@ -1,0 +1,29 @@
+/* ***************************************************
+******** responsive******************************** */
+@media screen and (max-width: 990px) {
+    .selectmatiereclasse {
+        font-size: 18px;
+    }
+
+    .donneeprevision {
+        font-size: 17px;
+    }
+
+    .insertstat .titre {
+        font-size: 17px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .selectmatiereclasse {
+        font-size: 16px;
+    }
+
+    .donneeprevision {
+        font-size: 16px;
+    }
+
+    .insertstat .titre {
+        font-size: 16px;
+    }
+}

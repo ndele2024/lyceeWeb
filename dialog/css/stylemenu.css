@@ -1,0 +1,157 @@
+    * {
+  padding:0;
+  margin:0;
+}
+
+
+header {
+  width:100%;
+  background-color:#DAA520;
+  z-index:1000;
+  
+}
+
+.menu-bar {
+  color:#FFF;
+  font-size:45px;
+  cursor:pointer;
+  padding:8px 10px;
+  margin-left:5px;
+  margin-top:10px;
+  margin-bottom:10px;
+}
+
+.deconnnect {
+  color:#FFF;
+  font-size:35px;
+  cursor:pointer;
+  padding:8px 10px;
+}
+
+.menu-bar:hover {
+  background-color:rgba(0, 0, 0, 0.1);
+  border-radius:25px;
+}
+
+.deconnnect:hover {
+  background-color:rgba(0, 0, 0, 0.1);
+  border-radius:25px;
+}
+
+#tag-menu {
+  display:none;
+}
+
+
+#tag-menu:checked ~ div.drawer {
+ /*animation: slide-in 0.5s ease;
+ animation-fill-mode: forwards;*/
+ -webkit-transition: all 0.5s ease-in;
+ left:0px;
+ z-index:1500;
+ width:500px;
+}
+
+.drawer {
+  position:absolute;
+  left:-600px;
+  background-color:#DAA520;
+  height:100%;
+  z-index:100;
+  width:300px;
+  -webkit-transition: all 0.5s ease-out;
+ /*animation: slide-out 0.5s ease;
+  animation-fill-mode: forwards;*/
+}
+
+.drawer ul li {
+  list-style:none;
+}
+
+.drawer ul li a {
+  text-decoration:none;
+  display:block;
+  color:#FFF;
+  border-top:1px solid #039;
+  height:90;
+}
+
+.drawer ul li a:hover{
+  background-color:rgba(0, 0, 0, 0.1);
+}
+
+.drawer ul li a {
+  width:480px;
+  height:90px;
+  text-align:center;
+  padding-top:20px;
+}
+
+/*@keyframes slide-in {
+ from {left: -280px;}
+ to {left: 0;}
+}
+
+@keyframes slide-out {
+ from {left: 0;}
+ to {left: -280px;}
+}*/
+
+/*nouveau code css menu2*/
+
+/* reset our lists to remove bullet points and padding */
+.mainmenu, .submenu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  left:10px;
+  font-size:30px
+}
+
+/* make ALL links (main and submenu) have padding and background color */
+.mainmenu a {
+  display: block;
+  background-color: #CCC;
+  text-decoration: none;
+  padding: 10px;
+  color: #000;
+}
+
+/* add hover behaviour */
+.mainmenu a:hover {
+    background-color: #C5C5C5;
+}
+
+
+/* when hovering over a .mainmenu item,
+  display the submenu inside it.
+  we're changing the submenu's max-height from 0 to 300px;
+*/
+
+.mainmenu li:hover .submenu {
+  display: block;
+  max-height: 800px;
+}
+
+/*
+  we now overwrite the background-color for .submenu links only.
+  CSS reads down the page, so code at the bottom will overwrite the code at the top.
+*/
+
+.submenu a {
+  background-color: #991;
+}
+
+/* hover behaviour for links inside .submenu */
+.submenu a:hover {
+  background-color: #666;
+}
+
+/* this is the initial state of all submenus.
+  we set it to max-height: 0, and hide the overflowed content.
+*/
+.submenu {
+  overflow: hidden;
+  max-height: 0;
+  -webkit-transition: all 0.5s ease-out;
+}

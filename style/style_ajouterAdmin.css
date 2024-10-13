@@ -1,0 +1,22 @@
+.ligneHead {
+    text-align: center;
+    padding: 15px 15px;
+}
+
+.ligneBody:nth-child(odd) {
+    background-color: #f1f1f1;
+    text-align: center;
+}
+
+.ligneBody:nth-child(even) {
+    background-color: #3f3a3a;
+    text-align: center;
+    color: #f1f1f1;
+}
+
+.alladmin{
+    margin: 50px 0;
+    padding: 5px;
+    border: 1px solid crimson;
+    border-radius: 5px;
+}

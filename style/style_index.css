@@ -1,0 +1,286 @@
+body {
+    margin: 0;
+}
+
+/**********************************************
+*****************HEARDER**********************
+********************************************/
+header {
+    width: 100%;
+    height: 90vh;
+    background-image: url(../ressources/fond2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 0 0 15px 15px;
+    margin-bottom: 5px;
+}
+
+.text-nav {
+    font-size: 1.5rem;
+}
+
+.navsygbuss {
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    opacity: 0.6;
+    z-index: 10;
+}
+
+.image_logo {
+    width: 40px;
+    height: 40px;
+    /* margin-right: 5px; */
+}
+
+.image_deconnexion {
+    width: 30px;
+    height: 30px;
+}
+
+.btn-index {
+    width: 250px;
+    height: 60px;
+    font-size: 20px;
+    color: #f1f1f1;
+    border-radius: 7px;
+    background-color: rgba(4, 128, 45, 0.8);
+}
+
+.btn-index-dis {
+    width: 250px;
+    height: 60px;
+    font-size: 20px;
+    color: #f1f1f1;
+    border-radius: 7px;
+    background-color: rgb(136, 138, 133);
+}
+
+
+.btn-index:hover {
+	width: 260px;
+    height: 65px;
+    box-shadow:5px 5px 5px #f1f1f1;
+}
+
+.bouton-connect {
+	/*margin : auto;*/
+	text-align:center;
+    position: relative;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.text-logo {
+    font-size: 4rem;
+    line-height: 60px;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: greenyellow;
+    /* text-shadow: #FFFCA8 2px 2px 0px, #9C9C9C 4px 4px 0px; */
+    position: absolute;
+    top: 35%;
+    margin: 0 0 0 30px;
+    animation: texte-logo 3s ease-in;
+}
+
+.text-head {
+	background-color:rgba(0,0,0,0.3);
+	text-align:center;
+	/*color: #f1f1f1;*/
+	color: crimson;
+	font-size:25px;
+	font-weight:bold;
+	margin: 40px auto 10px auto;
+    /*display:none;*/
+}
+
+#zone1{
+	display:none;
+}
+
+.text-head a {
+	font-size:30px;
+}
+
+.css-3d-text {
+    color: #11ad28;
+    font-family: Playball, cursive, 'Arial Narrow';
+    text-shadow: 0px 0px 0 rgb(-11, 145, 12),
+        -1px -1px 0 rgb(-40, 116, 0),
+        -2px -2px 0 rgb(-68, 88, 0),
+        -3px -3px 0 rgb(-96, 60, 0),
+        -4px -4px 0 rgb(-124, 32, 0),
+        -5px -5px 0 rgb(-153, 3, 0),
+        -6px -6px 0 rgb(-181, -25, 0),
+        -7px -7px 0 rgb(-209, -53, 0),
+        -8px -8px 7px rgba(223, 237, 29, 1),
+        -8px -8px 1px rgba(223, 237, 29, 0.5),
+        0px 0px 7px rgba(223, 237, 29, .2);
+}
+
+@keyframes texte-logo {
+    0% {
+        margin-left: 50%;
+        transform: scale(0);
+    }
+}
+
+@media screen and (max-width: 700px) {
+	.text-head {
+	font-size:15px;
+}
+.text-head a {
+	font-size:25px;
+}
+.text-logo {
+	font-size:3.5rem;
+}
+.btn-index {
+    width: 200px;
+    height: 50px;
+    font-size: 18px;
+    color: #f1f1f1;
+    border-radius: 7px;
+    background-color: rgba(4, 128, 45, 0.8);
+}
+
+.btn-index:hover {
+	width: 210px;
+    height: 55px;
+    box-shadow:3px 3px 3px #f1f1f1;
+}
+
+}
+
+/**********************************************
+*****************MAIN**********************
+********************************************/
+.texte-service {
+    border: 2px solid;
+    border-radius: 42px 42px 101px 101px / 16px 16px 60px 60px;
+    width: 70%;
+    height: 80px;
+    text-align: center;
+    margin: 15px auto;
+    padding: 15px 0;
+    font-family: fantasy;
+    font-size: 30px;
+    background-color: aquamarine;
+    color: #11ad28;
+}
+
+#card-index {
+    border: 3px solid;
+    border-color: rgb(16, 212, 98);
+    background-color: rgba(127, 255, 212, 0.3);
+    box-shadow: 0 5px 5px 5px;
+    border-radius: 10px;
+}
+
+.img-card {
+    width: 100%;
+    height: 320px;
+}
+
+.card-button {
+    display: block;
+    text-decoration: none;
+    border: 1px solid #11ad28;
+    border-radius: 10px;
+    background-color: antiquewhite;
+    width: 180px;
+    height: 40px;
+    padding: 5px;
+    color: rgb(116, 116, 232);
+    cursor: pointer;
+}
+
+.card-button:hover {
+    opacity: 0.8;
+    width: 175px;
+    height: 38px;
+    box-shadow: 2px 2px 2px 2px gray;
+}
+
+.card-button:active {
+    opacity: 0.7;
+    width: 170px;
+    height: 38px;
+    box-shadow: -2px 3px 3px;
+}
+
+/* ------------------------------- */
+/* footer */
+/* ------------------------------- */
+
+footer {
+    margin: 30px 10px 0 10px;
+    font-size: 20px;
+}
+
+.img-contact {
+    width: 20px;
+    height: 20px;
+}
+
+#text-contacter {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: cadetblue;
+    margin: 5px 0px;
+    background-color: bisque;
+}
+
+#text-contacter p {
+    margin: 0 10px;
+}
+
+.contacts {
+    border-left: 2px solid #333;
+    padding-left: 5px;
+}
+
+/* ------------------------------- */
+/* partie Caroussel */
+/* ------------------------------- */
+
+.titre-caroussel {
+    margin-top: 30px;
+    font-size: 20px;
+    font-family: fantasy;
+    text-decoration: underline;
+    color: chocolate;
+    display: flex;
+    justify-content: center;
+}
+
+.bloc-carroussel {
+    margin: 20px auto;
+    width: 55%;
+    border: 2px solid #333;
+    border-radius: 10px;
+}
+
+@media screen and (max-width: 600px) {
+    .titre-caroussel{
+        font-size: 15px;
+    }
+    .bloc-carroussel {
+        width: 80%;
+        border-radius: 10px;
+    }
+
+    footer {
+        font-size: 15px;
+    }
+    
+    .img-contact {
+        width: 15px;
+        height: 15px;
+    }
+    
+}

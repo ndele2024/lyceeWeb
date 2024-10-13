@@ -1,0 +1,74 @@
+.rightpart1 {
+    margin: 20px auto;
+    padding: 20px 40px;
+    font-family: calibri, cursive;
+    font-size: 18px;
+    color: rgb(5, 70, 5);
+    background-color: rgba(230, 240, 243, 0.5);
+    border-radius: 10px;
+}
+
+.option {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.parClasse {
+    border-right: 1px solid lightgray;
+    padding: 10px;
+    border: 1px solid;
+    cursor: pointer;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 5px 5px;
+}
+
+.parEnseignant {
+    border-left: 1px solid lightgray;
+    padding: 10px;
+    border: 1px solid;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 5px 5px;
+}
+
+.rightpart1 .inactive {
+    background-color: #f1f1f1;
+    color: gray;
+}
+
+.ligneHead {
+    text-align: center;
+    padding: 15px 15px;
+}
+
+.ligneBody:nth-child(odd) {
+    background-color: #f1f1f1;
+    text-align: center;
+}
+
+.ligneBody:nth-child(even) {
+    background-color: #757272;
+    text-align: center;
+    color: #f1f1f1;
+}
+#zoneclasse{
+	display:none;
+}
+
+@media screen and (max-width: 768px) {
+
+    .rightpart1 {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+    .rightpart1 {
+        font-size: 14px;
+    }
+}

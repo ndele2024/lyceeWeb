@@ -1,0 +1,249 @@
+body {
+    margin: 0;
+}
+/* ********************************** 
+            header 
+*************************************/
+header {
+  /* background: url(../ressources/fond1.png) no-repeat 50% 50%; */
+  background: rgb(78, 195, 108);
+  background: radial-gradient(circle, rgba(78, 195, 108, 1) 0%, rgba(222, 163, 99, 1) 100%, rgba(0, 212, 255, 1) 100%);
+  background-size: cover;
+  height: 20vh;
+  border-radius: 0 0px 40px 40px;
+  margin-bottom: 10px;
+}
+
+div {
+  text-align: center;
+}
+
+div.msgbienvenu {
+  color: aliceblue;
+  font-weight: bold;
+}
+
+#head {
+  padding-top: 30px;
+}
+
+/* ***************** logo1 anim ***************** */
+#imgindex1 {
+  width: 100px;
+  height: 100px;
+  animation: myAnim1 5s ease 0s infinite alternate-reverse forwards;
+}
+
+@keyframes myAnim1 {
+
+  0%,
+  100% {
+    transform: translateX(0%);
+    transform-origin: 50% 50%;
+  }
+
+  15% {
+    transform: translateX(-30px) rotate(-6deg);
+  }
+
+  30% {
+    transform: translateX(15px) rotate(6deg);
+  }
+
+  45% {
+    transform: translateX(-15px) rotate(-3.6deg);
+  }
+
+  60% {
+    transform: translateX(9px) rotate(2.4deg);
+  }
+
+  75% {
+    transform: translateX(-6px) rotate(-1.2deg);
+  }
+}
+
+/* ***************** logo2 anim ***************** */
+#imgindex2 {
+  width: 100px;
+  height: 100px;
+  animation: myAnim2 2s ease 0s infinite alternate-reverse forwards;
+}
+
+@keyframes myAnim2 {
+  0% {
+    animation-timing-function: ease-in;
+    opacity: 1;
+    transform: translateY(-45px);
+  }
+
+  24% {
+    opacity: 1;
+  }
+
+  40% {
+    animation-timing-function: ease-in;
+    transform: translateY(-24px);
+  }
+
+  65% {
+    animation-timing-function: ease-in;
+    transform: translateY(-12px);
+  }
+
+  82% {
+    animation-timing-function: ease-in;
+    transform: translateY(-6px);
+  }
+
+  93% {
+    animation-timing-function: ease-in;
+    transform: translateY(-4px);
+  }
+
+  25%,
+  55%,
+  75%,
+  87% {
+    animation-timing-function: ease-out;
+    transform: translateY(0px);
+  }
+
+  100% {
+    animation-timing-function: ease-out;
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+/* **************** texte animé index **************** */
+.tracking-in-expand {
+  -webkit-animation: tracking-in-expand 3s cubic-bezier(0.215, 0.610, 0.355, 1.000) infinite alternate-reverse forwards;
+  animation: tracking-in-expand 3s cubic-bezier(0.215, 0.610, 0.355, 1.000) infinite alternate-reverse forwards;
+  text-shadow: 0 1px #808d93, -1px 0 #cdd2d5, -1px 2px #808d93, -2px 1px #cdd2d5, -2px 3px #808d93, -3px 2px #cdd2d5, -3px 4px #808d93, -4px 3px #cdd2d5, -4px 5px #808d93, -5px 4px #cdd2d5, -5px 6px #808d93, -6px 5px #cdd2d5, -6px 7px #808d93, -7px 6px #cdd2d5, -7px 8px #808d93, -8px 7px #cdd2d5, 2px 2px 2px rgba(97, 206, 98, 0), -6px 2px 5px rgba(97, 206, 98, 0);
+  color: #bee9de;
+  font-size: 50px;
+}
+
+@-webkit-keyframes tracking-in-expand {
+  0% {
+    letter-spacing: -0.5em;
+    opacity: 0;
+  }
+
+  40% {
+    opacity: 0.6;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes tracking-in-expand {
+  0% {
+    letter-spacing: -0.5em;
+    opacity: 0;
+  }
+
+  40% {
+    opacity: 0.6;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+
+/* *******************************************
+            main 
+ *********************************************** */
+main {
+  background: url(../ressources/fond4.jpg) no-repeat 50% 50%;
+  background-size: cover;
+  height: 74vh;
+  border-radius: 20px;
+}
+
+.leftpart {
+    text-align: center;
+    padding: 20px 0px;
+    background-color: rgba(222, 163, 99, 0.5);
+    margin: 0px 0px;
+    border-radius: 20px;
+    height: 74vh;
+}
+
+.mainpart {
+  width: 75%;
+  text-align: center;
+  background-color: rgb(153, 236, 145);
+  min-height: 30vh;
+  border-radius: 20px 20px 20px 20px;
+  margin: 0 auto;
+  position: relative;
+  top: 40%;
+  transform: translateY(-50%);
+  box-shadow: 10px 10px #808d93;
+}
+
+.lien {
+  position: relative;
+  top: 75%;
+}
+
+#inputGroupPrepend3{
+  cursor: pointer;
+}
+
+/* **************** responsiveness ************** */
+@media screen and (max-width: 768px) {
+  #imgindex1 {
+    width: 80px;
+    height: 80px;
+  }
+  #imgindex2 {
+    width: 80px;
+    height: 80px;
+  }
+  .tracking-in-expand{
+    font-size: 40px;
+  }
+  header{
+    height: 15vh;
+  }
+  main{
+    height: 80vh;
+  }
+  
+    .leftpart {
+    display: none;
+}
+
+.mainpart {
+    margin: 10px auto;
+}
+
+.leftpart {
+    height: auto;
+}
+
+}
+.rouge{
+  color: crimson;
+}
+
+@media screen and (max-width: 576px) {
+
+  #logo1,
+  #logo2,
+  .side {
+    display: none;
+  }
+  .mainpart{
+    width: 80%;
+    margin: 0 auto;
+  }
+
+}

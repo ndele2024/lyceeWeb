@@ -1,0 +1,21 @@
+.lastnotes {
+    font-size: 13px;
+    text-align: center;
+    color: rgb(5, 70, 5);
+}
+
+.nomeleve {
+    font-size: 18px;
+    font-weight: bolder;
+}
+
+.cardNote {
+    max-width: 800px;
+    margin: 40px auto 20px auto;
+}
+
+@media screen and (max-width: 600px) {
+    .lastnotes input {
+        font-size: 11px;
+    }
+}

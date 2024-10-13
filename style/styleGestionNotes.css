@@ -1,0 +1,65 @@
+.mainpart {
+    margin: 10px 0;
+}
+
+.leftpart {
+    text-align: center;
+    padding: 20px 0px;
+    background-color: rgba(222, 163, 99, 0.5);
+    margin: 20px 0px;
+    border-radius: 10px;
+    height: 85vh;
+}
+
+.rightpart {
+    margin: 20px auto;
+    padding: 40px 40px;
+    font-family: calibri, cursive;
+    font-size: 20px;
+    color: rgb(5, 70, 5);
+    background-color: rgba(230, 240, 243, 0.5);
+    border-radius: 10px;
+}
+
+legend {
+    text-align: center;
+}
+
+#tabrecapupload:nth-child(odd) {
+    background-color: #f1f1f1;
+    text-align: center;
+}
+
+#tabrecapupload:nth-child(even) {
+    background-color: #3f3a3a;
+    text-align: center;
+    color: #f1f1f1;
+}
+
+
+/* **************** responsiveness ************** */
+
+@media screen and (max-width: 768px) {
+
+    .leftpart {
+        display: none;
+    }
+
+    .mainpart {
+        margin: 10px auto;
+    }
+
+    .leftpart {
+        height: auto;
+    }
+
+    #formu{
+        font-size:medium;
+    }
+}
+@media screen and (max-width: 600px) {
+
+    #formu{
+        font-size:small;
+    }
+}

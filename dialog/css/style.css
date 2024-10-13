@@ -1,0 +1,77 @@
+body {
+background-color:rgb(231, 216, 113);
+background-image:url("arriere6.png");
+}
+fieldset {
+margin-bottom:10px;
+border:2px solid #DF3F3F;
+}
+input[type=text],input[type=tel], input[type=password], select {
+padding:3px;
+border:2px solid #F5C5C5;
+border-radius:5px;
+background-color:#FCDEDE;
+width:260px;
+height:50px;
+box-shadow:1px 1px 2px #C0C0C0 inset;
+font-family:candara;
+font-weight:bold;
+font-size:30px;
+text-align:center;
+}
+select {margin-top:10px;}
+input[type=radio] {
+border:none;
+size:300px;
+background-color:#FCDEDE;
+cursor:pointer;
+}
+label {cursor:pointer;}
+input[type=submit], input[type=reset] {
+width:180px;
+margin-left:3px;
+box-shadow:1px 1px 1px #D83F3D;
+cursor:pointer;
+font-family:candara;
+font-weight:bold;
+font-size:30px;
+}
+input[type=button] {
+width:300px;
+height:50px;
+margin-left:3px;
+box-shadow:1px 1px 1px #D83F3D;
+cursor:pointer;
+font-family:candara;
+font-weight:bold;
+font-size:30px;
+}
+
+input:focus {background-color:white}
+input[type=submit]:focus, input[type=reset]:focus, input[type=button]:focus {
+background-color:#FFF3F3;}
+input[type=submit]:hover, input[type=reset]:hover, input[type=button]:hover {
+background-color:#FCDEDE;}
+ input[type=text]:hover, input[type=password]:hover, select:hover {
+ background-color:#FFF3F3;
+ }
+input[type=submit]:active, input[type=reset]:active, input[type=button]:active {
+box-shadow:1px 1px 1px #D83F3D inset;
+background-color:#FFF3F3;}
+
+.table { border-spacing:0px; border-style:solid; border-collapse:collapse;}
+.table tr{padding: 10px 5px;}
+hr {border:1px solid #DF3F3F;}
+.msg {color:white; font-size:35px; font-family:candara; font-weight:bold;}
+div {color:royalblue; font-size:35px; font-family:candara; font-weight:bold;}
+.classe1 {color:red; font-size:40px; font-weight:bold; font-family:courier new; test-align:center; font-style:italic}
+.classe2 {background-color:lightblue; color:olive; font-size:30px; font-weight:bold; font-family:candara;}
+.classe3 {background-color:lightblue; color:olive; font-size:30px; font-weight:bold; font-family:candara;}
+.classe4 {color:royalblue; font-size:30px; font-family:candara; font-weight:bold;}
+.classe5 {color:blue; font-size:35px; font-weight:bold; font-family:Eras Demi ITC; text-align:center;}
+.classe6 {color:green; font-size:35px; font-weight:bold; font-family:courier new; text-align:center; font-style:italic;}
+.cache {display: none;}
+.formu {background-color:lightblue;}
+a {text-decoration:none;}
+
+

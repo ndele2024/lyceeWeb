@@ -1,0 +1,88 @@
+.zonebouton {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0px 15px;
+}
+
+.rightButton {
+    margin-left: auto;
+}
+
+main {
+    padding-top: 15px;
+}
+
+.zoneTableau {
+    width: 98%;
+    margin: 20px auto;
+    color: rgb(5, 70, 5);
+    font-size: 18px;
+    background-color: rgba(230, 240, 243, 0.5);
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.ligneHead {
+    text-align: center;
+    padding: 15px 15px;
+}
+
+.ligneBody:nth-child(odd) {
+    background-color: #f1f1f1;
+    text-align: center;
+}
+
+.ligneBody:nth-child(even) {
+    background-color: #3f3a3a;
+    text-align: center;
+    color: #f1f1f1;
+}
+
+.ligneBody input[type=text] {
+    text-align: center;
+    font-size: 16px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1.5px solid #333;
+}
+
+.ligneBody:nth-child(odd) input[type=text] {
+    background-color: rgba(131, 129, 129, 0.2);
+}
+
+.ligneBody:nth-child(even) input[type=text] {
+    background-color: #f1f1f1;
+}
+
+/* ***************************************************
+******** responsive******************************** */
+@media screen and (max-width: 768px) {
+    .zoneTableau {
+        font-size: 16px;
+    }
+
+    .matri {
+        display: none;
+    }
+
+    #buttonModifier {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .zoneTableau {
+        font-size: 14px;
+    }
+
+    .matri,
+    .numero {
+        display: none;
+    }
+
+    #buttonModifier {
+        font-size: 14px;
+    }
+}

@@ -1,0 +1,121 @@
+
+/* ***************************************************
+******** MAIN PART ******************************** */
+
+.form-image {
+    width: 150px;
+    height: 150px;
+}
+
+.texte-image {
+    color: rgb(6, 70, 70);
+}
+
+/*   .image-fleche{
+      width: 15px;
+      height: 15px;
+      margin-bottom: 30px;
+  } */
+.zoneimage {
+    margin: 10px auto;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 1px solid #ffffff;
+    background-color: aliceblue;
+    cursor: pointer;
+    outline: none;
+    box-shadow: 5px 5px gray;
+}
+
+.zoneimage:hover {
+    width: 195px;
+    height: 195px;
+    opacity: 0.8;
+    box-shadow: 2px 2px gray;
+}
+
+.mainmenu {
+    text-align: center;
+    padding: 20px 0px;
+    background-color: rgba(222, 163, 99, 0.5);
+    margin: 20px 0px;
+    border-radius: 10px;
+    z-index: 40;
+}
+
+.rapport-accueil {
+    margin: 20px auto;
+    padding: 40px 40px;
+    font-family: calibri, cursive;
+    font-size: 15px;
+    color: rgb(5, 70, 5);
+    background-color: rgba(230, 240, 243, 0.5);
+    border-radius: 100px 30px 300px 200px;
+}
+
+.rapport-note{
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    -moz-box-orient: vertical;
+    -moz-line-clamp: 3;
+     -o-box-orient: vertical;
+    -o-line-clamp: 3;
+    overflow: hidden;
+}
+.rapport-accueil .button {
+    text-align: right;
+    margin: 5px 200px 40px 0;
+}
+.rapport-stat{
+    margin-top: 20px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    -moz-box-orient: vertical;
+    -moz-line-clamp: 1;
+    -o-box-orient: vertical;
+    -o-line-clamp: 1;
+    overflow: hidden;
+} 
+/* .rapport-stat1 {
+    margin-top: 20px;
+} */
+
+
+/* **************** responsiveness ************** */
+@media screen and (max-width: 768px) {
+
+    .mainmenu {
+        margin: 20px 20px;
+        border-radius: 10px;
+        text-align: left;
+        width: 80%;
+    }
+
+    .zoneimage {
+        margin: 10px 10px;
+    }
+
+    main {
+        height: auto;
+    }
+
+    .rapport-accueil {
+        border-radius: 30px 30px 20px 20px;
+    }
+    .form-image {
+        width: 100px;
+        height: 100px;
+    }
+    .zoneimage {
+        width: 160px;
+        height: 160px;
+    }
+    .zoneimage:hover {
+        width: 155px;
+        height: 155px;
+    }
+}
+
